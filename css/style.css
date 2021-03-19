@@ -1,0 +1,251 @@
+.bg-footer {
+  background-color: #229ad6;
+  margin: 0px;
+}
+.bg-footer a {
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.1s;
+}
+.bg-footer li:hover {
+  text-transform: uppercase;
+  color: rgb(214, 214, 214);
+}
+.bg-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.bg-footer h5 {
+  text-decoration: none;
+  color: #fff;
+}
+.text-action p {
+  padding: 0 10px 0 100px;
+  text-align: justify;
+}
+.call-action .text-action {
+  margin: 40px 0px 40px 40px;
+}
+.navbar {
+  background-color: transparent !important;
+}
+
+.btn-crossline::before .btn-crossline::after {
+  display: block;
+  text-decoration: none;
+  padding: 5px 10px;
+  font: 30px/1 sans-serif;
+  transform: skew(-33deg);
+  color: inherit;
+  background-color: #f2f2f2;
+  color: black;
+}
+
+#btn-span {
+  color: #fff;
+  background-color: #229ad6;
+  padding: 10px 15px 10px 15px;
+  transform: skew(-33deg);
+}
+
+.img-colaborador {
+  width: 100%;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: hsl(0deg 0% 100%);
+}
+
+.navbar-nav {
+  margin-left: auto;
+  color: #fff;
+}
+
+.fixed-custom {
+  /* position: fixed; */
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+li svg {
+  fill: #fff;
+}
+.btn-carrito {
+  background-color: #229ad6;
+}
+
+.text-h1 {
+  font-size: 30px;
+  text-transform: uppercase !important;
+  font-weight: 600;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: #21212100 !important;
+}
+
+#mainNav.navbar-shrink .nav-custom {
+  color: black !important;
+}
+
+#mainNav.navbar-shrink a {
+  color: white !important;
+}
+
+@media (max-width: 991px) {
+  #mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border: none;
+    background-color: #ffffff00 !important;
+    transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
+  }
+
+  .navbar-nav .nav-item a {
+    color: #ffffff !important;
+  }
+}
+
+@media (max-width: 991px) {
+  #youtube {
+    width: 400px;
+    height: 400px;
+  }
+
+  .call-action .text-action {
+    margin: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  #youtube {
+    width: 300px;
+    height: 300px;
+  }
+  .call-action .text-action {
+    margin: 0px;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .lead {
+    text-align: center;
+  }
+  .navbar-nav {
+    background-color: #0079c1;
+    text-align: center;
+    color: #fff;
+  }
+  .navbar-nav .dropdown-menu {
+    position: relative;
+  }
+  .text-start {
+    text-align: center !important;
+  }
+  .btn-position:nth-child(3) {
+    justify-content: center;
+  }
+  .btn-position:nth-child(2) {
+    margin-left: 10px;
+  }
+  .btn-crossline {
+    display: flex;
+    justify-content: center;
+  }
+  .btn-2 {
+  }
+}
+
+.font {
+  font-size: 17px;
+}
+
+.fixed-bottom,
+.fixed-top {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.dropdown-menu {
+  background-color: #fdfdfd;
+}
+
+.product-img {
+  width: 100%;
+}
+
+.dropdown {
+  position: static !important;
+}
+
+.dropdown-menu {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  margin-top: 0px !important;
+  width: 100% !important;
+}
+
+@media (min-width: 992px) {
+  .dropdown-menu {
+    padding-left: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dropdown-menu {
+    padding-left: 100px;
+  }
+}
+
+/* .btn-home::before,
+.btn-home::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  border-radius: 10px;
+  transform: skew(-33deg);
+} */
+
+.each {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-home {
+  z-index: 1;
+  color: #fff;
+  background: #0079c1;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  font-size: 1.1rem;
+  padding: 12px 35px;
+  transform: skew(-21deg);
+  border-radius: 5px;
+}
+
+.btn-home span {
+  display: inline-block;
+  transform: skew(21deg);
+  color: #fff;
+}
+.btn-home:visited {
+  color: #fff;
+}
+.btn-home:hover {
+  background: #0069a8;
+}
+
+.banner {
+  background-image: url("https://cdn.shopify.com/s/files/1/0040/8551/4369/files/banner_principal.jpg?v=1616080397");
+}
