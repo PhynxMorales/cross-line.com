@@ -212,3 +212,10 @@ $(document).ready(function () {
     var html5Video = document.getElementById("htmlVideo");
   });
 });
+
+function menu() {
+  document.getElementById("menu").classList.add("navbar-down");
+}
+document.getElementById("menu").onclick = function () {
+  menu();
+};
