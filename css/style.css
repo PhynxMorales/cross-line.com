@@ -353,7 +353,7 @@ svg {
 }
 
 .banner {
-  background-image: url("https://cdn.shopify.com/s/files/1/0040/8551/4369/files/banner_principal_32dfc93f-d359-4982-bb71-90c598e53517.jpg?v=1621458156");
+  background-image: url("../Assets/banner_principal.jpeg");
   background-attachment: fixed;
 }
 
@@ -492,10 +492,20 @@ button {
 h4 {
   text-align: justify;
 }
+.catalogos {
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 0px;
+}
 .catalogos img {
   width: 100%;
-  padding: 10px;
-  border-radius: 20px;
+  height: 100%;
+  border-radius: 8px;
+}
+.catalogos img:hover {
+  transform: scale(1.05);
+  transform-origin: 50% 50%;
+  transition: ease 1s;
 }
 
 .copyright {
