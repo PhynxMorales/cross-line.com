@@ -1,10 +1,24 @@
 <!doctype html>
-<html lang="es-mx">
+<html lang="es">
 
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Empresa manufacturera de soportes para cables, con modelos exclusivos en México">
+  <meta name="robots" content="index,follow">
+
+  <meta name="og:title"
+    content="Cross Line - Fabricantes y Distribuidores de Soportes y Ductos para instalaciones eléctricas [+50 años de experiencia]">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://crossline.com.mx/" />
+  <meta property="og:image" content="" />
+  <meta property="og:description"
+    content="▷ Fabricantes de soporteria y Ductos desde hace más de 50 años en el mercado eléctrico.">
+
+  <meta name="author" content="Create by PhynxMorales - Copyright Crossline">
+  <meta property="og:locale" content="es_ES" />
 
 
   <link href="./css/bootstrap.min.css" rel="stylesheet">
@@ -17,6 +31,39 @@
 
 <body>
 
+  <!--Modal Anuncios-->
+  <div class="modal fade" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg " role="document">
+
+      <!--Content-->
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="btn btn-close" aria-label="Close"></button>
+          </button>
+        </div>
+        <!--Body-->
+        <div class="modal-body mb-0 p-0 d-flex justify-content-center">
+          <!-- <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+              allowfullscreen></iframe>
+          </div> -->
+          <img width="100%" height="100%" src="./Assets/demo_img_crossline.png" alt="">
+        </div>
+
+        <!--Footer-->
+        <!-- <div class="modal-footer justify-content-center">
+
+          <button type="button" class="btn btn-home" data-dismiss="modal"><span>Cerrar</span></button>
+        </div> -->
+
+      </div>
+      <!--/.Content-->
+
+    </div>
+  </div>
+  <!--Modal Anuncios-->
 
   <!-- Navbar -->
   <header class="header">
@@ -25,8 +72,8 @@
       <div class="container">
         <!-- Navbar brand -->
         <a class="navbar-brand" href="./index.html">
-          <img src="./Assets/logotipo_CL_blanco.svg" height="90" alt="Logo de Crossline" class="px-xl-5 px-lg-5 mt-2"
-            loading="lazy" />
+          <img src="./Assets/logotipo_CL_blanco.svg" height="90" alt="Logo de Crossline"
+            class="px-xl-5 px-lg-5 mt-2 logo" id="logo" loading="lazy" />
         </a>
         <!-- Toggle button -->
         <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
@@ -49,6 +96,8 @@
               <a onclick="menu();" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                 data-mdb-toggle="dropdown" aria-expanded="false">
                 Productos
+
+
               </a>
               <!-- Dropdown menu -->
 
@@ -91,31 +140,56 @@
                       <li>
                         <button class="dropdown-item" type="button">Eléctroregistro</button>
                       </li>
-                    </a>
-                    <a href="./productos.html">
-                      <li>
-                        <button class="dropdown-item" type="button">EJOT®</button>
+                      <li class=" d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                        <div class="row">
+
+                          <div class="col-1"><a class="btn btn-outline-light btn-floating m-1"
+                              href="https://www.instagram.com/crosslinemex" role="button"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="32" fill="currentColor"
+                                class="bi redes" viewBox="0 0 16 16">
+                                <path
+                                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                              </svg></a></div>
+                          <div class="col-1"><a class="btn btn-outline-light btn-floating m-1"
+                              href="https://www.facebook.com/crosslinemx/" role="button"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="33" fill="currentColor"
+                                class="bi redes" viewBox="0 0 16 16">
+                                <path
+                                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                              </svg></a></div>
+                          <div class="col-1">
+                            <a class="btn btn-outline-light btn-floating m-1"
+                              href="https://www.youtube.com/channel/UCWDmoGNaLzr-luP98msJFNw" role="button"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="32" fill="currentColor"
+                                class="bi redes" viewBox="0 0 16 16">
+                                <path
+                                  d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                              </svg>
+
+                            </a>
+
+                          </div>
+                        </div>
                       </li>
                     </a>
-
                   </div>
-                  <div class="col-xl-6 col-md-0 col-sm-0 imagen-menu d-none d-sm-block">
-                    <img class="product-img" src="./Assets/banner-menu.png" alt="">
+                  <div class="col-xl-6 col-md-0 col-sm-0 imagen-menu d-none d-sm-block d-md-block">
+                    <img class="product-img" src="./Assets/banner-menu.png" alt="Fabrica de cross line">
                   </div>
                 </div>
               </ul>
 
 
-
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./catalogos.html">Catálogo Digital</a>
+              <a class="nav-link selected" aria-current="page" href="./catalogos.html">
+                <span>Catálogo Digital</span> </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./sobre-nosotros.html">Sobre nosotros</a>
+              <a class="nav-link selected" aria-current="page" href="./sobre-nosotros.html">Sobre Nosotros</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contactanos.html" tabindex="-1" aria-disabled="true">Contáctanos</a>
+            <li class="nav-item ">
+              <a class="nav-link selected" href="./contactanos.html" tabindex="-1" aria-disabled="true">Contáctanos</a>
             </li>
           </ul>
           <!-- Left links -->
@@ -123,16 +197,16 @@
           <!-- Search form -->
 
           <form class="d-flex">
-            <ul class="navbar-nav mb-lg-0">
-              <li class="nav-item ml-3 icon-menu  d-none d-sm-block">
+            <ul class="navbar-nav icon-menu mb-lg-0">
+              <li class="nav-item ml-3 ">
                 <a href="https://cross-line-soporteria.myshopify.com/">
-                <button type="button" class="btn btn-carrito">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3"
-                    viewBox="0 0 16 16">
-                    <path
-                      d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                  </svg>
-                </button>
+                  <button type="button" class="btn btn-carrito">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-cart3" viewBox="0 0 16 16">
+                      <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                  </button>
                 </a>
                 <strong class="d-none d-sm-block ms-1"></strong>
 
@@ -157,7 +231,6 @@
 
     <!--Banner-->
     <div class="container-fluid my-0 p-0">
-
       <div id="intro" class="bg-image banner vh-100">
         <div class="container d-flex justify-content-xl-start justify-content-sm-start  align-items-center h-100 mt-4"
           style="color: #f2f2f2;">
@@ -166,10 +239,13 @@
             <!--Container-text-->
             <div class="col-lg-8 p-5 mb-5">
               <h1 class="display-1 text-start wow animate__animated animate__fadeInDown">Cross Line</h1>
-              <p class="lead mb-4 h1 fs-1 wow animate__animated animate__fadeInDown">Cumplimos la demanda de nuestros clientes, produciendo productos con la mejor calidad en el mercado.</p>
+              <p class="lead mb-4 h1 fs-1 wow animate__animated animate__fadeInDown">Cumplimos la demanda de nuestros
+                clientes, produciendo productos con la mejor calidad en el mercado.</p>
               <!--Button-->
               <div class="col-12 btn-crossline mt-5 wow animate__animated animate__fadeInUp">
-                <button type="button" class="btn-home"><a href=""><span> Compra ahora</span></a></button>
+                <button type="button" class="btn-home"><a
+                    href="https://api.whatsapp.com/send?phone=+5215558701197&text=Hola,%20Buena%20tarde,%20me%20gustar%C3%ADa%20cotizar."><span>
+                      Compra ahora</span></a></button>
               </div>
               <!--Button-->
             </div>
@@ -195,13 +271,14 @@
 
 
           <!--Grid column-->
-          <div class="col-md-5 mb-4 mb-md-0 order-lg-2 order-sm-1 wow animate__animated animate__fadeInRight">
+          <div class="col-md-5 mb-4 mb-md-0 order-lg-2 order-sm-1 wow animate__animated animate__fadeInRight"
+            style="visibility: visible; animation-name: fadeInRight;">
 
             <!--Image-->
             <div class="view overlay z-depth-1-half wow bounceInLeft d-none d-sm-block"
               style="visibility: visible; animation-name: bounceInLeft;">
-              <img loading="lazy" src="./Assets/banner_01.jpg" class="img-fluid rounded"
-                alt="Alianza Electrica Somos proyectos">
+              <img loading="lazy" src="./Assets/Banner nuestro sistema.jpg" class="img-fluid pt-5 rounded"
+                alt="Banner nuestro sistema">
 
 
 
@@ -212,11 +289,13 @@
 
 
           <!--Grid column-->
-          <div class="col-md-7 mb-4 mb-md-0 text-info wow animate__animated animate__fadeInLeft animate__slow	1s">
+          <div class="col-md-7 mb-4 mb-md-0 text-info wow animate__animated animate__fadeInLeft animate__slow	1s"
+            style="visibility: visible; animation-name: fadeInLeft;">
             <p>&nbsp;&nbsp;</p>
 
             <h3 class="font-weight-bold text-start">Nuestro Sistema</h3>
-            <hr style="max-width: 120px;  border: 2px solid #0079c1;  opacity: 1;">
+            <hr class="wow animate__animated animate__fadeInLeft animate__delay-1s"
+              style="max-width: 120px;  border: 2px solid #0079c1;  opacity: 1;">
 
             <p class="text-muted text-info-1">Nuestros sistemas de soportes
               para
@@ -236,16 +315,18 @@
 
             <div class="d-flex flex-row mb-3">
               <div class="row">
-                <div class="col-lg-5 btn-2 wow animate__animated animate__pulse animate__delay-2s animate__slow	1s">
+                <div class="col-lg-5 btn-2 wow animate__animated animate__pulse animate__delay-2s animate__slow	1s"
+                  style="visibility: visible; animation-name: pulse;">
                   <button type="button col-sm-12" class=" btn-home btn-about  btn-lg mt-2 btn-position"><a
-                      href=""><span>Conocenos</span></a></button>
+                      href="./sobre-nosotros.html"><span>Conocenos</span></a></button>
                 </div>
-                <div class="col-lg-7 col-sm-12 btn-2 wow animate__animated animate__pulse animate__delay-3s">
-                  <a
-                      href="https://api.whatsapp.com/send?phone=+5215558701197">
-                    <button type="button" class=" btn-home btn-about  btn-lg mx-lg-2 mt-2 ml-sm-3 btn-position"><span>Cotiza
-                        ahora</span></button>
-                    </a>
+                <div class="col-lg-7 col-sm-12 btn-2 wow animate__ animate__pulse animate__delay-3s"
+                  style="visibility: visible; animation-name: pulse;">
+
+                  <button type="button" class=" btn-home btn-about  btn-lg mx-lg-2 mt-2 ml-sm-3 btn-position"><a
+                      href="https://api.whatsapp.com/send?phone=+5215558701197"><span>Cotiza
+                        ahora</span></a></button>
+
                 </div>
 
               </div>
@@ -277,31 +358,39 @@
 
 
 
+
     <!--Se colaborador-->
     <div class="container-fluid  py-2 ">
-
-
       <!--Section: Content-->
       <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
-
         <!--Grid row-->
         <div class="row">
 
-
-
           <!--Grid column-->
-          <div class="col-md-7 mb-4 mb-md-0 my-xl-5 colaborador wow animate__animated animate__fadeInLeft">
+          <div class="col-md-7 mb-4 mb-md-0 my-xl-5 colaborador wow animate__ animate__fadeInLeft animated"
+            style="visibility: visible; animation-name: fadeInLeft;">
 
-            <!--Image-->
-            <div class="view overlay z-depth-1-half wow bounceInLeft parallax p2" data-parallax="0.5"
+
+            <div class="view overlay z-depth-1-half wow bounceInLeft parallax p2 animated" data-parallax="0.5"
               style="visibility: visible;">
-              <video width="580" height="330" controls id="youtube" class="shadow">
-                <source src="./Assets/Cross Line tu solución en soportería.mp4" type="video/mp4">
-                <source src="movie.ogg" type="video/ogg">
+              <div class="video">
+                <img src="./Assets/video_crossline.jpg" width="100%" alt="Imagen banner video crossline" class=""
+                  id="youtube">
+              </div>
+              <div class="overlay-video">
 
-              </video>
+                <p>
+                  <button type="button" data-mdb-toggle="modal" data-mdb-target="#modal1" data-mdb-dismiss="modal"
+                    data-mdb-backdrop="false" class="wow animate__animated animate__pulse animate__repeat-3">
+                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-play-fill" fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                    </svg>
+                  </button>
+                </p>
 
-
+              </div>
 
             </div>
 
@@ -310,18 +399,28 @@
 
 
           <!--Grid column-->
-          <div class="col-md-5 my-xl-5 mb-md-0 text-info wow animate__animated animate__fadeInRight animate__slow	1s">
+          <div class="col-md-5 my-xl-5 mb-md-0 text-info wow animate__ animate__fadeInRight animate__slow	1s animated"
+            style="visibility: visible; animation-name: fadeInRight;">
 
             <h3 class="font-weight-bold text-start " style="padding: 0;">¿Por qué elegir Cross Line?</h3>
-            <hr style="max-width: 120px;  border: 2px solid #0079c1;  opacity: 1;">
-            <p class="text-muted px-xs-4 ">Nuestro grupo cuenta con plantas manufactureras y centros de servicios estratégicamente ubicados en el país, para cumplir satisfactoriamente con las demandas de nuestros clientes en tiempos de producción y entrega.
+            <hr class="wow animate__animated animate__fadeInRight animate__delay-1s"
+              style="max-width: 120px;  border: 2px solid #0079c1;  opacity: 1;">
+            <p class="text-muted px-xs-4 ">Nuestro grupo cuenta con plantas manufactureras y centros de servicios
+              estratégicamente ubicados en el país, para cumplir satisfactoriamente con las demandas de nuestros
+              clientes en
+              tiempos de producción y entrega.
               <br><br>
               Entra y conoce más acerca de Cross Line.
             </p>
             <div
-              class="d-flex flex-row mb-3 col-lg-12 col-sm-12 btn-position-3 wow animate__animated animate__pulse animate__delay-2s animate__slow	1s">
-              <button type="button" class="btn-home btn-lg "><a
-                  href="http://crossline.com.mx/por-que-elegir-cross-line/"><span>Conoce mucho más</span></a></button>
+              class="d-flex flex-row mb-3 col-lg-12 col-sm-12 btn-position-3 wow animate__ animate__pulse animate__delay-2s animate__slow	1s"
+              style="visibility: visible; animation-name: pulse;">
+              <button type="button" class="btn-home btn-lg "><a href="./sobre-nosotros.html"><span><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                      <path
+                        d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                    </svg> Conoce mucho más</span></a></button>
             </div>
             <div class=" d-flex">
               <div class="col-6 justify-content-start">
@@ -345,6 +444,9 @@
 
 
 
+
+
+
     <!--Productos-->
     <section>
 
@@ -363,7 +465,7 @@
                   <div class="card">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                       <img src="./Assets/tipo_ducto.png" class="img-fluid" />
-                      <a href="#!">
+                      <a href="https://cross-line-soporteria.myshopify.com/collections/canalizacion-tipo-ducto">
                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
                       </a>
                     </div>
@@ -373,7 +475,7 @@
                   <div class="card">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                       <img src="./Assets/tipo_escalera.png" class="img-fluid" />
-                      <a href="#!">
+                      <a href="https://cross-line-soporteria.myshopify.com/collections/charola-tipo-escalera">
                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
                       </a>
                     </div>
@@ -383,7 +485,7 @@
                   <div class="card">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                       <img src="./Assets/tipo_malla.png" class="img-fluid" />
-                      <a href="#!">
+                      <a href="https://cross-line-soporteria.myshopify.com/collections/canalizacion-tipo-malla">
                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
                       </a>
                     </div>
@@ -393,6 +495,50 @@
                   <div class="card">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                       <img src="./Assets/tipo_unicanal.png" class="img-fluid" />
+                      <a href="https://cross-line-soporteria.myshopify.com/collections/canalizacion-tipo-unicanal">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="card">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                      <img src="./Assets/ductos.png" class="img-fluid" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                      <img src="./Assets/canaleta.png" class="img-fluid" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                      <img src="./Assets/escalera.png" class="img-fluid" />
+                      <a href="#!">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="card">
+                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                      <img src="./Assets/abrazadera.png" class="img-fluid" />
                       <a href="#!">
                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
                       </a>
@@ -406,7 +552,7 @@
                 <div class="col-lg-3">
                   <div class="card">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                      <img src="./Assets/tipo_ducto.png" class="img-fluid" />
+                      <img src="./Assets/tuberia.png" class="img-fluid" />
                       <a href="#!">
                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
                       </a>
@@ -416,7 +562,7 @@
                 <div class="col-lg-3">
                   <div class="card">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                      <img src="./Assets/tipo_escalera.png" class="img-fluid" />
+                      <img src="./Assets/electroregistro.png" class="img-fluid" />
                       <a href="#!">
                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
                       </a>
@@ -426,62 +572,18 @@
                 <div class="col-lg-3">
                   <div class="card">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                      <img src="./Assets/tipo_malla.png" class="img-fluid" />
+                      <img src="./Assets/unicanal.png" class="img-fluid" />
                       <a href="#!">
                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
                       </a>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3">
-                  <div class="card">
-                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                      <img src="./Assets/tipo_unicanal.png" class="img-fluid" />
-                      <a href="#!">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
                 <div class="col-lg-3">
                   <div class="card">
                     <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                       <img src="./Assets/tipo_ducto.png" class="img-fluid" />
-                      <a href="#!">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="card">
-                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                      <img src="./Assets/tipo_escalera.png" class="img-fluid" />
-                      <a href="#!">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="card">
-                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                      <img src="./Assets/tipo_malla.png" class="img-fluid" />
-                      <a href="#!">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-3">
-                  <div class="card">
-                    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                      <img src="./Assets/tipo_unicanal.png" class="img-fluid" />
-                      <a href="#!">
+                      <a href="https://cross-line-soporteria.myshopify.com/collections/canalizacion-tipo-ducto">
                         <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
                       </a>
                     </div>
@@ -591,7 +693,7 @@
       <input type="checkbox" id="btn-mas">
       <div class="social">
 
-        <a href="tel:+5215558701197">
+        <a href="tel:+52556917 9117">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp"
             viewBox="0 0 16 16">
             <path
@@ -599,7 +701,7 @@
             </path>
           </svg>
         </a>
-        <a href="mailto:ventas@crossline.com">
+        <a href="mailto:ventasinternet@crossline.com.mx">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill"
             viewBox="0 0 16 16">
             <path
@@ -757,11 +859,12 @@
 
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="mailto:ventas@crossline.com" class="text-custom mb-2"><svg xmlns="http://www.w3.org/2000/svg"
-                    width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <a href="mailto:ventasinternet@crossline.com.mx" class="text-custom mb-2"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope"
+                    viewBox="0 0 16 16">
                     <path
                       d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
-                  </svg> ventas@crossline.com</a>
+                  </svg> ventasinternet@crossline.com.mx</a>
               </li>
               <li>
                 <a href="tel:276775463" class="text-custom mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
@@ -775,7 +878,7 @@
                     height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
                     <path
                       d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                  </svg> +52 5558701197</a>
+                  </svg> +52 55 5870 1197</a>
               </li>
               <li>
                 <a target="_blank" href="https://goo.gl/maps/TwJuwQYvjcXYNk8E6" class="text-custom mb-2">
@@ -825,6 +928,21 @@
     </div>
     <!-- Copyright -->
   </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+          <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/-_GgnbcNuvg"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
   <!-- Footer -->
   <!-- Popper
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"

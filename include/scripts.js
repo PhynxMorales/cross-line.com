@@ -3,55 +3,20 @@
  * Copyright 2013-2020 Start Bootstrap
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
  */
-(function ($) {
-  "use strict"; // Start of use strict
+console.log("Create by: [Github] PhynxMorales ");
 
-  // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
-    if (
-      location.pathname.replace(/^\//, "") ==
-        this.pathname.replace(/^\//, "") &&
-      location.hostname == this.hostname
-    ) {
-      var target = $(this.hash);
-      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
-      if (target.length) {
-        $("html, body").animate(
-          {
-            scrollTop: target.offset().top - 72,
-          },
-          1000,
-          "easeInOutExpo"
-        );
-        return false;
-      }
-    }
+$(document).ready(function () {
+  $("#modal1").on("hidden.bs.modal", function () {
+    var $this = $(this).find("iframe"),
+      tempSrc = $this.attr("src");
+    $this.attr("src", "");
+    $this.attr("src", tempSrc);
   });
 
-  // Closes responsive menu when a scroll trigger link is clicked
-  $(".js-scroll-trigger").click(function () {
-    $(".navbar-collapse").collapse("hide");
+  $("#html5Video").on("hidden.bs.modal", function () {
+    var html5Video = document.getElementById("htmlVideo");
   });
-
-  // Activate scrollspy to add active class to navbar items on scroll
-  $("body").scrollspy({
-    target: "#mainNav",
-    offset: 74,
-  });
-
-  // Collapse Navbar
-  var navbarCollapse = function () {
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
-    } else {
-      $("#mainNav").removeClass("navbar-shrink");
-    }
-  };
-  // Collapse now if page is not at top
-  navbarCollapse();
-  // Collapse the navbar when page is scrolled
-  $(window).scroll(navbarCollapse);
-})(jQuery); // End of use strict
+});
 
 // jquery ready start
 $(document).ready(function () {
@@ -219,3 +184,28 @@ function menu() {
 document.getElementById("menu").onclick = function () {
   menu();
 };
+
+$(document).ready(function () {
+  setTimeout(function () {
+    $("#mostrarmodal").modal("show");
+  }, 5000);
+  // Close modal on button click
+  $(".btn").click(function () {
+    $("#mostrarmodal").modal("hide");
+  });
+});
+
+var nav = document.querySelector("nav");
+var dropdown = document.getElementById("navbarSupportedContent");
+var menu = document.getElementById("menu");
+var logo = document.getElementById("logo");
+
+window.addEventListener("scroll", function () {
+  if (window.pageYOffset > 100) {
+    nav.classList.add("bg-navbar-light", "shadow", "p-0");
+    logo.classList.add("logo-collapse");
+  } else {
+    nav.classList.remove("bg-navbar-light", "shadow", "p-0");
+    logo.classList.remove("logo-collapse");
+  }
+});

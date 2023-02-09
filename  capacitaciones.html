@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: rgb(31, 30, 30);
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container-primary {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+
+    }
+
+    .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 400px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      border-radius: 2px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.205);
+    }
+  </style>
+  </head>
+
+  <body>
+    <section class="container-primary">
+      <!-- Swiper -->
+      <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="">
+              <img src="https://alianzaelectrica.com/img/assets/img/Catalogos/Corporativo%20Catalogo.png" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="https://alianzaelectrica.com/img/assets/img/Catalogos/Alianza%20Catalogo.png" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="https://alianzaelectrica.com/img/assets/img/Catalogos/Valmact%20Catalogo.png" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="https://alianzaelectrica.com/img/assets/img/Catalogos/SATCO%20FOCOS%20Catalogo.png" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="https://alianzaelectrica.com/img/assets/img/Catalogos/SATCO%20LUMINARIAS%20Focos.png" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="https://alianzaelectrica.com/img/assets/img/Catalogos/Ilumiacion_AE.JPG" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="https://alianzaelectrica.com/img/assets/img/Catalogos/Nuvo%20Lighting.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="https://alianzaelectrica.com/img/assets/img/Catalogos/Nuvo%20Reflections%202020.jpg" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="">
+              <img src="https://alianzaelectrica.com/img/assets/img/Catalogos/Siemens%20PDF.jpg" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 20,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        loop: true
+      });
+    </script>
+  </body>
+
+</html>
